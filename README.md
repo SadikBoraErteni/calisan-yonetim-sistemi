@@ -28,7 +28,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
     - Docker yüklü olduğundan emin olun.
     - Terminalinizde aşağıdaki komutu çalıştırarak PostgreSQL konteynerini başlatın. Bu, projenizin bağlanacağı veritabanı sunucusunu ayağa kaldırır.
     ```bash
-    docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+    docker run --name my-postgres -e POSTGRES_PASSWORD=---- -p ----:---- -d postgres
     ```
 
 2.  **Projeyi Derleyin ve Çalıştırın:**
