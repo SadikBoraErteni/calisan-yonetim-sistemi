@@ -1,46 +1,36 @@
-Employee Management System
-This project is a simple Java console application designed to practice fundamental database management skills. Developed using Java, Maven, and PostgreSQL, this system performs basic CRUD (Create, Read, Update, Delete) operations on employee data.
+Employee Management API (Spring Boot Backend)
+This project is a RESTful API developed for a employee management system. It uses Spring Boot, Spring Data JPA, and PostgreSQL for database operations.
 
 Features
-Database Integration: Seamlessly connects to a PostgreSQL database.
+CRUD Operations: Supports Create, Read, Update, and Delete operations for employee data.
 
-CRUD Operations: Performs the following actions on employee records:
+RESTful Endpoints: Accessible API endpoints using HTTP methods (GET, POST, PUT, DELETE).
 
-Create: Adds new employees to the database.
+CORS Support: Configured CORS settings to enable seamless communication with a frontend application.
 
-Read: Displays a list of existing employees.
+Technologies
+Backend: Spring Boot, Java
 
-Update: Modifies an employee's information (e.g., updating their salary).
+Database: PostgreSQL
 
-Delete: Permanently removes an employee from the database.
+ORM: Spring Data JPA, Hibernate
 
-Dynamic Data Management: Resets the database table on each run to ensure a clean start and maintain data integrity.
+Build Tool: Maven
 
-Technologies Used
-Java: The core programming language of the application.
+Prerequisites
+Java 17 or higher
 
-Maven: A powerful tool used to manage project dependencies and the build lifecycle.
+Maven
 
-PostgreSQL: A reliable, open-source relational database used for data storage and querying.
+Docker (for PostgreSQL database)
 
-Docker: Enables the PostgreSQL database to run easily in an isolated environment.
+Getting Started
+Follow the steps below to run the project on your local machine:
 
-Setup and Running
-Follow these steps to run the project on your local machine:
+Clone the Project:
 
-Start the PostgreSQL Database:
-
-Ensure that Docker is installed.
-
-Run the following command in your terminal to start the PostgreSQL container. This will launch the database server that your project will connect to.
+Open your terminal and run the following commands to clone the project repository:
 
 Bash
 
-docker run --name my-postgres -e POSTGRES_PASSWORD=---- -p ----:---- -d postgres
-Compile and Run the Project:
-
-Navigate to the main directory of the project.
-
-Start the application by clicking the "Run" button in VS Code or by running the App.java file in the terminal.
-
-The application will sequentially print all CRUD operations to the console.
+git clone [https://github.com/YOUR_GITHUB_USERNAME/calisan-yonetim-web.git](https://github.com/YOUR_GITHUB_USERNAME/calisan-yonetim-web.git)
