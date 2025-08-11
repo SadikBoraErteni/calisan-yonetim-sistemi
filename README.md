@@ -1,40 +1,46 @@
-# Çalışan Yönetim Sistemi
+Employee Management System
+This project is a simple Java console application designed to practice fundamental database management skills. Developed using Java, Maven, and PostgreSQL, this system performs basic CRUD (Create, Read, Update, Delete) operations on employee data.
 
-Bu proje, temel veritabanı yönetimi becerilerini pratik bir şekilde uygulamayı amaçlayan basit bir Java konsol uygulamasıdır. `Java`, `Maven` ve `PostgreSQL` teknolojileri kullanılarak geliştirilen bu sistem, 
-çalışan verileri üzerinde temel CRUD (Create, Read, Update, Delete) operasyonlarını gerçekleştirmektedir.
+Features
+Database Integration: Seamlessly connects to a PostgreSQL database.
 
-## Özellikler
+CRUD Operations: Performs the following actions on employee records:
 
-- **Veritabanı Entegrasyonu:** PostgreSQL veritabanına sorunsuz bağlantı kurar.
-- **CRUD Operasyonları:** Çalışan kayıtları üzerinde aşağıdaki işlemleri yapar:
-  - **Create (Oluşturma):** Veritabanına yeni çalışan ekleme.
-  - **Read (Okuma):** Mevcut çalışanların listesini görüntüleme.
-  - **Update (Güncelleme):** Bir çalışanın bilgilerini değiştirme (örneğin, maaşını güncelleme).
-  - **Delete (Silme):** Bir çalışanı veritabanından kalıcı olarak silme.
-- **Dinamik Veri Yönetimi:** Her çalıştırmada temiz bir başlangıç için veritabanı tablosunu sıfırlayarak veri bütünlüğünü korur.
+Create: Adds new employees to the database.
 
-## Kullanılan Teknolojiler
+Read: Displays a list of existing employees.
 
-- **Java:** Uygulamanın temel programlama dili.
-- **Maven:** Proje bağımlılıklarını ve yaşam döngüsünü yönetmek için kullanılan güçlü bir araç.
-- **PostgreSQL:** Veri depolama ve sorgulama için kullanılan güvenilir, açık kaynaklı ilişkisel veritabanı.
-- **Docker:** PostgreSQL veritabanının kolayca ve izole bir ortamda çalıştırılmasını sağlar.
+Update: Modifies an employee's information (e.g., updating their salary).
 
-## Kurulum ve Çalıştırma
+Delete: Permanently removes an employee from the database.
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip edin:
+Dynamic Data Management: Resets the database table on each run to ensure a clean start and maintain data integrity.
 
-1.  **PostgreSQL Veritabanını Başlatın:**
-    - Docker yüklü olduğundan emin olun.
-    - Terminalinizde aşağıdaki komutu çalıştırarak PostgreSQL konteynerini başlatın. Bu, projenizin bağlanacağı veritabanı sunucusunu ayağa kaldırır.
-    ```bash
-    docker run --name my-postgres -e POSTGRES_PASSWORD=---- -p ----:---- -d postgres
-    ```
+Technologies Used
+Java: The core programming language of the application.
 
-2.  **Projeyi Derleyin ve Çalıştırın:**
-    - Projenin ana dizinine gidin.
-    - VS Code içindeki "Run" düğmesi veya terminalde `App.java` dosyasını çalıştırarak uygulamayı başlatın.
-    - Uygulama, tüm CRUD operasyonlarını sırasıyla konsol ekranına yazdıracaktır.
+Maven: A powerful tool used to manage project dependencies and the build lifecycle.
 
----
+PostgreSQL: A reliable, open-source relational database used for data storage and querying.
 
+Docker: Enables the PostgreSQL database to run easily in an isolated environment.
+
+Setup and Running
+Follow these steps to run the project on your local machine:
+
+Start the PostgreSQL Database:
+
+Ensure that Docker is installed.
+
+Run the following command in your terminal to start the PostgreSQL container. This will launch the database server that your project will connect to.
+
+Bash
+
+docker run --name my-postgres -e POSTGRES_PASSWORD=---- -p ----:---- -d postgres
+Compile and Run the Project:
+
+Navigate to the main directory of the project.
+
+Start the application by clicking the "Run" button in VS Code or by running the App.java file in the terminal.
+
+The application will sequentially print all CRUD operations to the console.
